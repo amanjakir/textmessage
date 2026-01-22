@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  justify-content: space-between; /* logo left, links right */
+  align-items: center;
+  background-color: #e63946;
+  padding: 10px 20px;
+  position: fixed; /* stays on top while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* logo text */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+/* navigation links list */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px; /* space between links */
+  margin: 0;
+  padding: 0;
+}
+
+/* links inside nav */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: add space below navbar so content doesn’t hide behind it */
+body {
+  margin: 0;
+}
+
+main {
+  margin-top: 70px; /* adjust height of fixed navbar */
+}
